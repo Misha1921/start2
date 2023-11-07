@@ -1,30 +1,79 @@
-    class Student: amount_of_students = 0
-    def __init__ (self,height = 160):
-        self.height = height
-        self.money = 2000;
-        Student.amount_of_students += 1
+# # class Parent:
+# #     pass
+# #
+# # class Child(Parent):
+# #     pass
+# #
+# # class Human:
+# #     height = 170;
+# #
+# # class Student(Human):
+# #     salary = 400
+# #
+# # class Worker(Human):
+# #     salary = 15000
+# #
+# # nick = Student()
+# # Anna = Worker()
+# # print(nick.height)
+# # print(nick.salary)
+# # print("----")
+# # print(Anna.height)
+# # print(Anna.salary)
+# #
+# #
+# #
+# # class GrandParent:
+# #     height = 170
+# #     satiety = 100
+# #     age = 60
+# #
+# # class Parent(GrandParent):
+# #     height = 170
+# #     age = 40
+# #
+# # class Child(Parent):
+# #     height = 50
+# #     def __init__(self):
+# #         print(self.height)
+# #         print(self.satienty)
+# #         print(self.age)
+# # nick = Child()
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# class Hello:
+#     def __init__(self):
+#         print("hello")
+# class HelloWorld(Hello)
+#     def __init__(self):
+#         super().__init__()
+#         print("World")
+# one = HelloWorld()
 
-    1 usage
-    def printHeight(self):
-    print(self.height)
-    2 usages
-    def printCountMoney(self):
-        print(self.money)
-    2 usages
-    def subMoney(self, countMoney = 0):
-        self.money = countMoney
-        Student.printCountMoney(self)
 
-stepan = Student (height=180)
-stepan.printHeight()
-stepan.printCountMoney()
-print("-"*20)
+class GrandParent:
+    def about(self):
+        print("I am GrandParent")
 
-katrin = Student (height=170) # katrin.printCountMoney() katrin.subMoney (200)
-# katrin.printCountMoney()
-print("-"*20)
+    def AboutMyself(self):
+        print("I an=m GrandParent")
 
-oleg = Student(height=190)
-oleg.printHeight()
-oleg.printCountMoney
-print("-"*20)
+class Parent(GrandParent):
+    def AboutMyself(self):
+        print("I am parent")
+
+class Child(Parent):
+    def __init__(self):
+        super().About()
+        super().AboutMyself()
+
+Jamal = Child()
